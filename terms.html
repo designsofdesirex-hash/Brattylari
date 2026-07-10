@@ -1,134 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms & Privacy — Queen Mannel</title>
-  <meta name="description" content="Terms of use and privacy policy for the official website of Queen Mannel. Read before proceeding.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terms of Service — Mrs Lari</title>
+  <meta name="description" content="The terms governing use of this site and any booking made through it, including content-usage and payment terms.">
+  <link rel="canonical" href="https://www.heelsofmine.com/terms.html">
+  <meta property="og:title" content="Terms of Service — Mrs Lari">
+  <meta property="og:description" content="The terms governing use of this site and any booking made through it, including content-usage and payment terms.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.heelsofmine.com/terms.html">
+  <meta property="og:image" content="https://www.heelsofmine.com/assets/img/og-cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0B0F0D">
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+  <link rel="apple-touch-icon" href="assets/img/mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
 </head>
 <body>
 
-  <div class="age-gate" id="ageGate">
-    <div class="age-gate-content">
-      <div class="age-gate-logo">Queen Mannel</div>
-      <p class="age-gate-text">This site contains adult content.<br>You must be 18 or older to enter.</p>
-      <div class="age-gate-actions">
-        <button class="btn btn-primary" id="ageEnter">E N T E R</button>
-        <button class="btn btn-ghost" id="ageLeave">L E A V E</button>
+  <div class="age-gate" id="age-gate">
+    <div class="age-gate__panel">
+      <div class="age-gate__logo"><div class="logo-wrapper logo-wrapper--mark" aria-label="Mrs Lari logo"><img src="assets/img/photo%2019.jfif" alt="Age Gate Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg);"></div></div>
+      <h2>Welcome to my world. First, the paperwork.</h2>
+      <p><strong>You must be 18+ to enter</strong></p>
+      <p>This site contains mature, editorial content built around heels, legs, and nylon — plus the occasional accessory I don\'t leave out of frame. By entering you confirm you are at least 18 (or the age of majority where you live).</p>
+      <div class="age-gate__actions">
+        <button class="btn btn-primary btn-block" data-age-enter type="button">I'm 18+ — Enter</button>
+        <button class="btn btn-ghost btn-block" data-age-exit type="button">Exit</button>
       </div>
+      <p class="age-gate__meta">Entering confirms you've read the <a href="content-notice.html" style="color:var(--accent)">Content Notice</a>.</p>
     </div>
   </div>
 
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <nav class="nav" id="nav">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo">Queen Mannel</div>
-      <div class="nav-motto">Your Eternal Addiction</div>
-    </a>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html" class="nav-link">H O M E</a>
-      <a href="rules.html" class="nav-link">R U L E S   &   S E R V I C E S</a>
-      <a href="gallery.html" class="nav-link">G A L L E R Y</a>
-      <a href="booking.html" class="nav-link">B O O K I N G</a>
-    </div>
-    <div class="nav-socials">
-      <a href="https://www.threads.net/@mannel_dom19" target="_blank" rel="noopener" class="nav-social" aria-label="Threads">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="currentColor" stroke="none">@</text></svg>
-      </a>
-      <a href="https://www.instagram.com/mannel_dom19/?hl=en" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-      </a>
-    </div>
-    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo" aria-label="Mrs Lari home"><svg viewBox="0 0 420 110" width="99" height="26" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mrs Lari">
+  <defs><linearGradient id="grad-hd" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#E4C793"/><stop offset="1" stop-color="#6E1423"/>
+  </linearGradient></defs>
+  <path d="M17,84 L17,52 L33,66 L50,24 L67,66 L83,52 L83,84 Z" fill="none" stroke="url(#grad-hd)" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="50" cy="24" r="4.2" fill="#E4C793"/>
+  <text x="112" y="55" font-size="34" letter-spacing="2" class="logo-word-1">HEELS</text>
+  <text x="112" y="88" font-size="34" letter-spacing="2" class="logo-word-2">OF MINE</text>
+</svg></a>
+    <button class="menu-btn" data-nav-open type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
       <span></span><span></span><span></span>
     </button>
-  </nav>
+  </header>
 
-  <!-- ============================================================
-       HERO SECTION
-       ============================================================ -->
-  <section class="hero" id="hero">
-    <div class="hero-video-placeholder"></div>
-    <div class="hero-overlay"></div>
-    <canvas class="hero-canvas" id="heroCanvas"></canvas>
-    <div class="hero-content">
-      <h1 class="hero-title">TERMS & CONDITIONS</h1>
-      <p class="hero-subtitle" style="margin-bottom: 50px;">The absolute law.</p>
-
-      <div class="hero-cta">
-        <a href="#terms" class="btn btn-primary btn-large">READ TERMS &darr;</a>
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-drawer__panel">
+      <button class="nav-drawer__close menu-btn" data-nav-close type="button" aria-label="Close menu">
+        <span style="transform:translateY(6.5px) rotate(45deg);"></span>
+        <span style="opacity:0;"></span>
+        <span style="transform:translateY(-6.5px) rotate(-45deg);"></span>
+      </button>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rules.html">The Rules</a></li>
+          <li><a href="services.html">Services & Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="brands.html">For Brands</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+            <div class="nav-drawer__foot">
+        <p><a href="https://linktr.ee/mrs_larryNo1" target="_blank" rel="noopener">Linktree</a></p>
+        <p><a href="https://throne.com/mrs_larry" target="_blank" rel="noopener">Throne</a></p>
+        <p><a href="https://www.tipfunder.com/Mrs_larry" target="_blank" rel="noopener">Tipfunder</a></p>
+        <p><a href="https://revolut.me/larissu9q4" target="_blank" rel="noopener">Revolut</a></p>
+        <p><a href="https://t.me/Mrs_larryNo1" target="_blank" rel="noopener">Telegram</a></p>
+        <p><a href="https://t.me/mrs_larryInfo" target="_blank" rel="noopener">Telegram Info</a></p>
+        <p><a href="https://onlyfans.com/mrs_larry" target="_blank" rel="noopener">OnlyFans</a></p>
+        <p><a href="https://www.loyalfans.com/mrs_larry" target="_blank" rel="noopener">Loyalfans</a></p>
+        <p><a href="https://www.instagram.com/bydreamlari?igsh=MW5reGNkaWpicm5pdw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="https://www.instagram.com/by.dream.lari" target="_blank" rel="noopener">Instagram Backup</a></p>
+        <p><a href="https://onlyfans.com/mrs_larrytrailer" target="_blank" rel="noopener">OnlyFans Trailer</a></p>
+        <p><a href="https://x.com/SpoilLari" target="_blank" rel="noopener">X (Twitter)</a></p>
+        <p><a href="https://x.com/uniqueMrslarry1" target="_blank" rel="noopener">X (Twitter Backup)</a></p>
       </div>
     </div>
-  </section>
+  </div>
+  <main>
 
-  <!-- TERMS CONTENT -->
-  <section class="section section--dark">
-    <div class="section-inner">
-      <div class="terms-content">
+    <section class="page-head has-video-bg sheen">
+      <video class="hero-video-bg" id="heroBgVideo" autoplay muted playsinline>
+        <source src="assets/Vid/video%203.mp4 colours ❤️All my heels pumps from @1969madeinitaly 🥰.mp4" type="video/mp4">
+      
+      </video>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const heroVideo = document.getElementById('heroBgVideo');
+          if (heroVideo && !window.heroBgVideoInitialized) {
+            window.heroBgVideoInitialized = true;
+            const videos = [
+              'assets/Vid/video%201.mp4',
+              'assets/Vid/video%202.mp4',
+              'assets/Vid/video%203.mp4',
+              'assets/Vid/video%204.mp4',
+              'assets/Vid/video%205.mp4'
+            ];
+            let currentIdx = Math.floor(Math.random() * videos.length);
+            heroVideo.src = videos[currentIdx];
+            
+            heroVideo.addEventListener('ended', () => {
+              let nextIdx = Math.floor(Math.random() * (videos.length - 1));
+              if (nextIdx >= currentIdx) nextIdx++;
+              currentIdx = nextIdx;
+              heroVideo.src = videos[currentIdx];
+              heroVideo.play().catch(e => console.log(e));
+            });
+          }
+        });
+      </script>
+      <div class="hero-video-overlay"></div>
+      <div class="container hero-content">
+      <p class="eyebrow" style="justify-content:center;">Legal</p>
+      <h1>Terms of Service</h1>
+        </div>
+    </section>
+    <section class="container prose">
 
-        <h2>Site Purpose</h2>
-        <p>This website serves as the official online presence of Queen Mannel. It provides information about services, rules of engagement, and booking facilities. No explicit content is hosted directly on this site.</p>
-
-        <h2>Age Requirement</h2>
-        <p>This website is intended for adults aged 18 and older. By entering this site, you confirm that you meet the minimum age requirement in your jurisdiction.</p>
-
-        <h2>Data Collection &amp; Privacy Policy</h2>
-        <p>This site utilizes <strong>Tally.so</strong> for the processing of booking applications and inquiries. By submitting a form, you acknowledge that your responses will be securely collected and automatically transferred to a private <strong>Google Sheet</strong> for review and record-keeping.</p>
-        <p>All data submitted—including your personal information, limits, and submission agreements—is strictly confidential and accessed exclusively by Queen Mannel. We do not sell, distribute, or expose your data to any external third parties. If your application is rejected or you are blacklisted, your data may be retained for future reference to enforce bans. No other hidden tracking, cookies, or analytics are implemented on this site.</p>
-
-        <h2>External Links</h2>
-        <p>This site contains links to third-party platforms including Threads and Instagram. These platforms have their own terms of service and privacy policies. We are not responsible for the content or practices of external sites.</p>
-
-        <h2>Content Ownership</h2>
-        <p>All content, text, design elements, and branding on this site are the intellectual property of Queen Mannel. Reproduction, distribution, or modification without explicit written consent is prohibited.</p>
-
-        <h2>Confidentiality</h2>
-        <p>All communications and personal information exchanged through this site or its booking forms are treated as confidential. Information will not be shared with third parties except as required by law.</p>
-
-        <h2>Contact</h2>
-        <p>For inquiries regarding these terms, use the booking form or reach out through the official social media channels listed on this site.</p>
-
-        <p class="last-updated">Last updated: July 2026</p>
-
+      <div class="card" style="margin-bottom:var(--space-6); border-color: var(--bordeaux-light, var(--surface-border));">
+        <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;"><strong>This is a starting template, not legal advice.</strong> Review it with a qualified lawyer in the jurisdiction where the business is legally established before publishing — the right requirements depend on facts (where she's established, how explicit any on-site content is) that only a lawyer can settle. See the project README for the open questions this affects.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-portrait">
-        <div class="footer-portrait-frame">
-          <!-- PHOTO PLACEHOLDER -->
+      <p><em>Last updated: [date]</em></p>
+
+      <h2>Age requirement</h2>
+      <p>This site and its services are restricted to adults 18 years of age or older (or the age of majority in your jurisdiction, if higher). By using this site you confirm you meet that requirement.</p>
+
+      <h2>The Rules</h2>
+      <p>Booking any service requires reading and accepting the <a href="rules.html" style="color:var(--accent);">Rules</a> page in full. The Rules govern communication expectations, payment and refund terms, content usage, and response times, and are incorporated into these Terms by reference.</p>
+
+      <h2>Services</h2>
+      <p>Current services and indicative pricing are listed on the <a href="services.html" style="color:var(--accent);">Services</a> page. Full pricing and scope are confirmed individually for each request. Payment is due in full before work begins unless otherwise agreed in writing.</p>
+
+      <h2>Content usage &amp; intellectual property</h2>
+      <p>All images, video, and written content on this site, and everything delivered through a booking, remain the intellectual property of Mrs Lari. Purchasing a booking grants you a personal, non-transferable license to view or use the delivered content for your own private use. You may not copy, redistribute, repost, resell, or publicly share any content from this site or from a delivered booking, in whole or in part. Gallery images are watermarked and traceable; redistribution is treated as a breach of these Terms and, where applicable, copyright law.</p>
+
+      <h2>Prohibited conduct</h2>
+      <ul>
+        <li>Attempting to circumvent the age-verification gate or misrepresenting your age.</li>
+        <li>Harassing, pressuring, or repeatedly messaging outside the response-time windows set in the Rules.</li>
+        <li>Redistributing, screenshotting for sharing, or reselling any content.</li>
+        <li>Chargebacks or payment disputes made without first contacting us to resolve the issue.</li>
+      </ul>
+
+      <h2>Disclaimer &amp; limitation of liability</h2>
+      <p>Services are provided "as is." To the maximum extent permitted by law, Mrs Lari is not liable for indirect, incidental, or consequential damages arising from use of this site or its services. Nothing in these Terms limits liability that cannot be limited under applicable law.</p>
+
+      <h2>Governing law</h2>
+      <p>[Governing law and jurisdiction — to be set once the business's country of establishment is confirmed.]</p>
+
+      <h2>Changes to these Terms</h2>
+      <p>These Terms may be updated from time to time; continued use of the site after a change constitutes acceptance of the update.</p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:hello@heelsofmine.com" style="color:var(--accent);">hello@heelsofmine.com</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="logo-wrapper logo-wrapper--footer" aria-label="Mrs Lari logo"><img src="assets/img/photo%2033.jpg" alt="Mrs Lari Footer Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg);"></div>
+      <div class="site-footer__cols">
+        <div>
+          <h4>Mrs Lari</h4>
+          <p style="font-size:0.88rem;">Editorial heels, legs &amp; nylon work — booked properly, delivered properly.</p>
+          <form class="field" style="margin-top:var(--space-5);" data-demo-form id="newsletter-form" data-success-target="newsletter-success">
+            <label for="newsletter-email">Get on the list</label>
+            <div style="display:flex; gap:8px;">
+              <input type="email" id="newsletter-email" name="email" placeholder="you@email.com" required>
+              <button class="btn btn-primary btn-sm" type="submit">Join</button>
+            </div>
+            <p class="form-note">No spam — just openings, drops, and the occasional off-platform-only offer.</p>
+          </form>
+          <div class="form-success" id="newsletter-success" style="margin-top:var(--space-3); padding:var(--space-3); text-align:left;">
+            You're on the list. Watch your inbox.
+          </div>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rules.html">The Rules</a></li>
+          <li><a href="services.html">Services & Booking</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="brands.html">For Brands</a></li>
+          <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="content-notice.html">Content Notice</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-center">
-        <p class="footer-tagline">"I am the fire of any fire I fear"</p>
-      </div>
-      <div class="footer-socials">
-        <a href="https://www.threads.net/@mannel_dom19" target="_blank" rel="noopener">Threads</a>
-        <a href="https://www.instagram.com/mannel_dom19/?hl=en" target="_blank" rel="noopener">@mannel_dom19</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Queen Mannel</span>
-      <span class="footer-divider">·</span>
-      <span>18+ Only</span>
-      <span class="footer-divider">·</span>
-      <a href="rules.html">Rules & Services</a>
-      <span class="footer-divider">·</span>
-      <a href="terms.html">Terms & Privacy</a>
+      <div class="site-footer__bottom">
+        <span>&copy; <span data-year></span> Mrs Lari. All rights reserved.</span>
+        </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="js/main.js"></script>
-  <script type="module" src="js/hero-3d.js"></script>
+  <div class="mobile-bar">
+    <a class="btn btn-primary" href="services.html">Book Now</a>
+    <a class="btn btn-ghost" href="https://www.instagram.com/bydreamlari?igsh=MW5reGNkaWpicm5pdw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn btn-ghost" href="https://linktr.ee/mrs_larryNo1" target="_blank" rel="noopener">Linktree</a>
+  </div>
+
+  <button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch theme">
+    <span class="theme-toggle__dot">&#10022;</span>
+    <span data-theme-label>Verre</span>
+  </button>
+
+  <div class="cookie-banner" id="cookie-banner" hidden>
+    <h3>Your privacy choices</h3>
+    <p>Necessary cookies keep the site running and are always on. Everything else is your call.</p>
+    <div class="cookie-banner__options">
+      <label class="cookie-check"><input type="checkbox" checked disabled> Necessary — always on</label>
+      <label class="cookie-check"><input type="checkbox" data-cookie-analytics> Analytics — cookieless, aggregate only</label>
+      <label class="cookie-check"><input type="checkbox" data-cookie-marketing> Marketing — retargeting, off by default</label>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn btn-ghost btn-sm" data-cookie-necessary type="button">Necessary only</button>
+      <button class="btn btn-primary btn-sm" data-cookie-save type="button">Save choices</button>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
