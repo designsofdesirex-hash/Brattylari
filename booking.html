@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking — Queen Mannel</title>
+  <meta name="description" content="Request a session with Queen Mannel. Choose your path — slave or fetishist — accept the terms, and submit your booking inquiry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ AGE GATE ═══ -->
+  <div class="age-gate" id="ageGate">
+    <div class="age-gate-content">
+      <div class="age-gate-logo">Queen Mannel</div>
+      <p class="age-gate-text">This site contains adult content.<br>You must be 18 or older to enter.</p>
+      <div class="age-gate-actions">
+        <button class="btn btn-primary" id="ageEnter">E N T E R</button>
+        <button class="btn btn-ghost" id="ageLeave">L E A V E</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ CURSOR ═══ -->
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════════ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo">Queen Mannel</div>
+      <div class="nav-motto">Your Eternal Addiction</div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">H O M E</a>
+      <a href="rules.html" class="nav-link">R U L E S   &   S E R V I C E S</a>
+      <a href="gallery.html" class="nav-link">G A L L E R Y</a>
+      <a href="booking.html" class="nav-link nav-link--active">B O O K I N G</a>
+    </div>
+    <div class="nav-socials">
+      <a href="https://www.threads.net/@mannel_dom19" target="_blank" rel="noopener" class="nav-social" aria-label="Threads">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="10" fill="currentColor" stroke="none">@</text></svg>
+      </a>
+      <a href="https://www.instagram.com/mannel_dom19/?hl=en" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO ═══ -->
+  <section class="hero hero--small" id="hero">
+    <div class="hero-overlay"></div>
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <h1 class="hero-title">BOOKING</h1>
+      <p class="hero-subtitle" style="margin-bottom: 50px;">Submit your application.</p>
+
+      <div class="hero-cta">
+        <a href="#booking" class="btn btn-primary btn-large">APPLY NOW &darr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ MAIN ═══ -->
+  <section class="section section--dark">
+    <div class="section-inner">
+
+      <!-- Persistent Note -->
+      <div class="booking-note reveal">
+        <p>Every booking begins with the <a href="rules.html#contract">Rules</a>. There are no exceptions.</p>
+      </div>
+
+      <!-- ─── Identity Split ─── -->
+      <div class="booking-split reveal" id="bookingSplit">
+        <div class="booking-card" id="cardSlave" data-path="slave">
+          <div class="booking-card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"></path><path d="M15 7h2a5 5 0 1 1 0 10h-2"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </div>
+          <h3 class="booking-card-title">I Am Your Slave</h3>
+          <p class="booking-card-text">I am already under your authority, or I am entering into ongoing submission.</p>
+        </div>
+        <div class="booking-card" id="cardFetishist" data-path="fetishist">
+          <div class="booking-card-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+          </div>
+          <h3 class="booking-card-title">I Am a Fetishist</h3>
+          <p class="booking-card-text">I am booking custom content or a session. No ongoing dynamic.</p>
+        </div>
+      </div>
+
+      <!-- ─── Slave Path ─── -->
+      <div class="booking-path" id="pathSlave">
+        <button class="booking-back" id="backSlave">← &nbsp; B A C K</button>
+
+        <h2 class="section-title" style="font-size: clamp(1.4rem, 3vw, 2rem);">Contract of Agreement</h2>
+
+        <div class="contract">
+          <h3 class="contract-title">CONTRACT OF AGREEMENT OF SLAVES</h3>
+
+          <div class="contract-section">
+            <h4>I. Submission &amp; Authority</h4>
+            <p>The slave acknowledges me as their sole dominant authority. All instructions, protocols, and decisions made by me are final and must be followed without hesitation, argument, or delay. The slave does not question, negotiate, or attempt to manipulate the terms of service. Obedience is not optional — it is the foundation of this agreement.</p>
+          </div>
+
+          <div class="contract-section">
+            <h4>II. Consent &amp; Limits</h4>
+            <p>All activities are conducted within the boundaries of informed, mutual consent. The slave has the right to communicate limits clearly before any session begins. A safeword system is in place and must be respected absolutely by both parties. Consent may be withdrawn at any time. Withdrawal of consent will not result in punishment or retaliation — however, repeated misuse of this right to avoid discipline may result in termination of the dynamic.</p>
+          </div>
+
+          <div class="contract-section">
+            <h4>III. Conduct</h4>
+            <p>The slave will conduct themselves with respect, discipline, and humility at all times — in private sessions, public interactions, and any communication with me. Disrespectful language, unsolicited demands, inappropriate familiarity, or attempts to control the dynamic from below will result in immediate disciplinary action or dismissal. The slave is expected to present themselves in a manner that reflects their devotion.</p>
+          </div>
+
+          <div class="contract-section">
+            <h4>IV. Confidentiality</h4>
+            <p>All personal information, session details, communication, and content exchanged between the slave and me are strictly confidential. No recordings, screenshots, or reproductions may be made without explicit written permission. Any breach of confidentiality will result in immediate and permanent termination of the relationship, and may be subject to legal action.</p>
+          </div>
+
+          <div class="contract-section">
+            <h4>V. Financial Discipline</h4>
+            <p>Tributes, session fees, and gifts are offered willingly and without expectation of reciprocity. The slave understands that financial service is a demonstration of devotion, not a transaction. Refund requests, chargebacks, or disputes will be treated as a violation of trust and will result in permanent blacklisting. All agreed-upon financial commitments must be honored in full and on time.</p>
+          </div>
+
+          <div class="contract-section">
+            <h4>VI. Termination</h4>
+            <p>Either party may terminate this agreement at any time. I reserve the right to end the dynamic without explanation. The slave may request release respectfully and in writing. Upon termination, all confidentiality obligations remain in effect indefinitely. No content, communication, or personal information may be shared, published, or disclosed after the relationship has ended.</p>
+          </div>
+        </div>
+
+        <!-- Checkbox -->
+        <label class="booking-checkbox">
+          <input type="checkbox" id="slaveAgree">
+          <span class="booking-checkbox-mark"></span>
+          <span class="booking-checkbox-label">I have read the <a href="rules.html">Rules &amp; Services</a> page and I agree to the Contract of Agreement of Slaves.</span>
+        </label>
+
+        <!-- Form Container with Lock -->
+        <div class="booking-form-container" id="slaveFormContainer">
+          <div class="booking-form-lock" id="slaveFormLock">
+            <div class="booking-form-lock-overlay">
+              <span class="lock-icon">🔒</span>
+              <p>Accept the Contract to proceed</p>
+            </div>
+            <iframe class="booking-tally" id="slaveTally" title="Slave Booking Form" data-src="https://tally.so/embed/dWVoKN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" src="about:blank"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Fetishist Path ─── -->
+      <div class="booking-path" id="pathFetishist">
+        <button class="booking-back" id="backFetishist">← &nbsp; B A C K</button>
+
+        <h2 class="section-title" style="font-size: clamp(1.4rem, 3vw, 2rem);">Booking Acknowledgment</h2>
+
+        <div class="contract contract--light">
+          <h3 class="contract-title">Before You Proceed</h3>
+          <div class="contract-section">
+            <p>By proceeding, you confirm that you are at least 18 years of age and that you have read and understood the <a href="rules.html">Rules &amp; Services</a> page in its entirety. You acknowledge that all sessions and content are governed by the terms outlined therein, and that respectful conduct, punctual payment, and absolute confidentiality are non-negotiable requirements. Failure to adhere to these standards will result in refusal of service without notice or explanation.</p>
+          </div>
+        </div>
+
+        <!-- Checkbox -->
+        <label class="booking-checkbox">
+          <input type="checkbox" id="fetishistAgree">
+          <span class="booking-checkbox-mark"></span>
+          <span class="booking-checkbox-label">I confirm I am 18+ and I have read the <a href="rules.html">Rules &amp; Services</a> page.</span>
+        </label>
+
+        <!-- Form Container with Lock -->
+        <div class="booking-form-container" id="fetishistFormContainer">
+          <div class="booking-form-lock" id="fetishistFormLock">
+            <div class="booking-form-lock-overlay">
+              <span class="lock-icon">🔒</span>
+              <p>Confirm acknowledgment to proceed</p>
+            </div>
+            <iframe class="booking-tally" id="fetishistTally" title="Fetishist Booking Form" data-src="https://tally.so/embed/dWVoKN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" src="about:blank"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Info Section (always visible) ─── -->
+      <div class="booking-info reveal">
+        <h3>What Happens Next</h3>
+        <p><strong>Response time:</strong> Expect a reply within 48 hours. Silence is not rejection — it is consideration.</p>
+        <p><strong>Payment:</strong> Accepted methods will be communicated upon approval. No payment is processed through this form.</p>
+        <p><strong>In-person sessions:</strong> Requests for real-life sessions are reviewed individually. You will be contacted only if approved. Location is disclosed at my discretion.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-portrait">
+        <div class="footer-portrait-frame">
+          <img src="Images/image5.jpg" alt="Queen Mannel">
+        </div>
+      </div>
+      <div class="footer-center">
+        <p class="footer-tagline">"I am the fire of any fire I fear"</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.threads.net/@mannel_dom19" target="_blank" rel="noopener">Threads</a>
+        <a href="https://www.instagram.com/mannel_dom19/?hl=en" target="_blank" rel="noopener">@mannel_dom19</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Queen Mannel</span>
+      <span class="footer-divider">·</span>
+      <span>18+ Only</span>
+      <span class="footer-divider">·</span>
+      <a href="rules.html">Rules &amp; Services</a>
+      <span class="footer-divider">·</span>
+      <a href="terms.html">Terms &amp; Privacy</a>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════ SCRIPTS ═══ -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking-gate.js"></script>
+
+  <script type="module" src="js/hero-3d.js"></script>
+</body>
+</html>
