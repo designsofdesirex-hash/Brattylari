@@ -72,7 +72,7 @@
     const applyTheme = (index) => {
       const theme = THEMES[index];
       document.documentElement.setAttribute('data-theme', theme.id);
-      labelEl.textContent = theme.label;
+      if (labelEl) labelEl.textContent = theme.label;
       localStorage.setItem(STORAGE_KEY, theme.id);
     };
 
@@ -93,13 +93,22 @@
     const closeBtn = getEl('[data-nav-close]');
     if (!drawer || !openBtn || !closeBtn) return;
 
-    const openDrawer = () => {
+    const openDrawer = (e) => {
+      if (e) e.preventDefault();
+      if (!drawer || !openBtn) return;
       drawer.classList.add('is-open');
       openBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden'; // Prevent scrolling
     };
 
-    const closeDrawer = () => {
+    const closeDrawer = (e) => {
+      if (e && e.target === drawer) {
+        // Allow close if clicking the drawer background
+      } else if (e && e.type === 'click' && closeBtn && closeBtn.contains(e.target)) {
+        // Allow close if clicking the close button
+      }
+      
+      if (!drawer || !openBtn) return;
       drawer.classList.remove('is-open');
       openBtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
