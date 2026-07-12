@@ -310,7 +310,7 @@
   // 8. STATS COUNTER ANIMATION
   // --------------------------------------------------------------------------
   const initStatsCounter = () => {
-    const statNums = getEls('.stat .num');
+    const statNums = getEls('.metric .num');
     if (statNums.length === 0) return;
 
     const observer = new IntersectionObserver((entries) => {
