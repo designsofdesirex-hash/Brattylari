@@ -37,15 +37,20 @@
   </div>
 
   <header class="site-header">
-    <a href="index.html" class="site-header__logo" aria-label="Mrs Lari home"><svg viewBox="0 0 420 110" width="99" height="26" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mrs Lari">
-  <defs><linearGradient id="grad-hd" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#E4C793"/><stop offset="1" stop-color="#6E1423"/>
-  </linearGradient></defs>
-  <path d="M17,84 L17,52 L33,66 L50,24 L67,66 L83,52 L83,84 Z" fill="none" stroke="url(#grad-hd)" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="50" cy="24" r="4.2" fill="#E4C793"/>
-  <text x="112" y="55" font-size="34" letter-spacing="2" class="logo-word-1">HEELS</text>
-  <text x="112" y="88" font-size="34" letter-spacing="2" class="logo-word-2">OF MINE</text>
-</svg></a>
+    <a href="index.html" class="site-header__logo text-logo" aria-label="Mrs Lari home">
+      <span class="header-name">Mrs Lari</span>
+      <span class="header-motto">Kneel & Pay</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules & Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="brands.html">Collaborations</a></li>
+        <li><a href="tribute.html">Tribute</a></li>
+        <li><a href="book.html" class="btn btn-primary btn-sm">Book Me</a></li>
+      </ul>
+    </nav>
     <button class="menu-btn" data-nav-open type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
       <span></span><span></span><span></span>
     </button>
@@ -58,18 +63,17 @@
         <span style="opacity:0;"></span>
         <span style="transform:translateY(-6.5px) rotate(-45deg);"></span>
       </button>
+      <div class="nav-drawer__logo">
+        <div class="logo-wrapper logo-wrapper--nav"><img src="assets/img/photo%202.jfif" alt="Mrs Lari Gold Logo"></div>
+      </div>
       <nav aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="rules.html">The Rules</a></li>
-          <li><a href="services.html">Services & Booking</a></li>
+          <li><a href="rules.html">Rules & Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="brands.html">For Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="journal.html">Journal</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="brands.html">Collaborations</a></li>
+          <li><a href="tribute.html">Tribute</a></li>
+          <li><a href="book.html">Book Me</a></li>
         </ul>
       </nav>
             <div class="nav-drawer__foot">
@@ -169,36 +173,43 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="logo-wrapper logo-wrapper--footer" aria-label="Mrs Lari logo"><img src="assets/img/photo%2028.jpg" alt="Mrs Lari Footer Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg);"></div>
-      <div class="site-footer__cols">
-        <div>
-          <h4>Mrs Lari</h4>
-          <p style="font-size:0.88rem;">Editorial heels, legs &amp; nylon work — booked properly, delivered properly.</p>
-          <form class="field" style="margin-top:var(--space-5);" data-demo-form id="newsletter-form" data-success-target="newsletter-success">
-            <label for="newsletter-email">Get on the list</label>
-            <div style="display:flex; gap:8px;">
-              <input type="email" id="newsletter-email" name="email" placeholder="you@email.com" required>
-              <button class="btn btn-primary btn-sm" type="submit">Join</button>
-            </div>
-            <p class="form-note">No spam — just openings, drops, and the occasional off-platform-only offer.</p>
-          </form>
-          <div class="form-success" id="newsletter-success" style="margin-top:var(--space-3); padding:var(--space-3); text-align:left;">
-            You're on the list. Watch your inbox.
-          </div>
+    <div class="container-wide">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <div class="logo-wrapper logo-wrapper--footer"><img src="assets/img/photo%2028.jpg" alt="Mrs Lari Footer Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg);"></div>
         </div>
-        <div>
-          <h4>Site</h4>
+        <div class="site-footer__right">
+        <div class="site-footer__columns">
+          <div class="site-footer__nav">
+          <h4>Pages</h4>
           <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rules.html">The Rules</a></li>
-          <li><a href="services.html">Services & Booking</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="brands.html">For Brands</a></li>
-          <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules & Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="brands.html">Collaborations</a></li>
+            <li><a href="tribute.html">Tribute</a></li>
+            <li><a href="book.html">Book Me</a></li>
           </ul>
         </div>
-        <div>
+                <div class="site-footer__contact">
+          <h4>Get in Touch / Socials</h4>
+          <ul class="footer-links-grid">
+            <li><a href="https://linktr.ee/mrs_larryNo1" target="_blank" rel="noopener">Linktree</a></li>
+            <li><a href="https://onlyfans.com/mrs_larry" target="_blank" rel="noopener">OnlyFans</a></li>
+            <li><a href="https://throne.com/mrs_larry" target="_blank" rel="noopener">Throne</a></li>
+            <li><a href="https://www.loyalfans.com/mrs_larry" target="_blank" rel="noopener">Loyalfans</a></li>
+            <li><a href="https://www.tipfunder.com/Mrs_larry" target="_blank" rel="noopener">Tipfunder</a></li>
+            <li><a href="https://www.instagram.com/bydreamlari?igsh=MW5reGNkaWpicm5pdw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://revolut.me/larissu9q4" target="_blank" rel="noopener">Revolut</a></li>
+            <li><a href="https://www.instagram.com/by.dream.lari" target="_blank" rel="noopener">Insta Backup</a></li>
+            <li><a href="https://t.me/Mrs_larryNo1" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="https://x.com/SpoilLari" target="_blank" rel="noopener">X (Twitter)</a></li>
+            <li><a href="https://t.me/mrs_larryInfo" target="_blank" rel="noopener">Telegram Info</a></li>
+            <li><a href="https://x.com/uniqueMrslarry1" target="_blank" rel="noopener">X Backup</a></li>
+            <li><a href="https://onlyfans.com/mrs_larrytrailer" target="_blank" rel="noopener">OF Trailer</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__legal">
           <h4>Legal</h4>
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
@@ -207,6 +218,9 @@
             <li><a href="content-notice.html">Content Notice</a></li>
           </ul>
         </div>
+        </div>
+        <p class="footer-tagline">Feet, socks, nylons & domination — your German Elite Dominatrix since 2020</p>
+      </div>
       </div>
       <div class="site-footer__bottom">
         <span>&copy; <span data-year></span> Mrs Lari. All rights reserved.</span>
@@ -215,7 +229,7 @@
   </footer>
 
   <div class="mobile-bar">
-    <a class="btn btn-primary" href="services.html">Book Now</a>
+    <a class="btn btn-primary" href="book.html">Book Me</a>
     <a class="btn btn-ghost" href="https://www.instagram.com/bydreamlari?igsh=MW5reGNkaWpicm5pdw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
     <a class="btn btn-ghost" href="https://linktr.ee/mrs_larryNo1" target="_blank" rel="noopener">Linktree</a>
   </div>
