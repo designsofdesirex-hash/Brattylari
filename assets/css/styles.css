@@ -445,65 +445,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .menu-btn span { display: block; width: 18px; height: 1.5px; background: var(--text-primary); transition: transform var(--dur-fast) var(--ease), opacity var(--dur-fast) var(--ease); }
 
-@media (min-width: 1024px) {
-   ========================================================================== */
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.logo-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(201, 166, 107, 0.3);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  background: #fff; /* Ensures any transparency is filled cleanly to match the baked-in white */
-}
-.logo-wrapper--mark {
-  width: 180px;
-  height: 180px;
-}
-.logo-wrapper--header {
-  width: auto;
-  max-width: 320px;
-  height: 84px;
-}
-.logo-wrapper--header img {
-  width: auto;
-  height: 100%;
-}
-.logo-wrapper--footer {
-  width: 250px;
-  height: 250px;
-  margin-bottom: var(--space-4);
-}
-.logo-wrapper--nav {
-  width: auto;
-  max-width: 240px;
-  height: 80px;
-  margin-bottom: var(--space-5);
-}
-.logo-wrapper--nav img {
-  width: auto;
-  height: 100%;
-}
-/* Hero variant — larger mark */
-.hero .logo-wrapper--mark {
-  width: 900px;
-  height: 900px;
-  max-width: 100%;
-  margin: 0 auto var(--space-6);
-}
-/* Age gate variant */
-.age-gate .logo-wrapper--mark {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto var(--space-5);
-}
 
 /* ==========================================================================
    BUTTONS
