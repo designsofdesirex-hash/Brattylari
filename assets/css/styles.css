@@ -1468,7 +1468,7 @@ img, video, a {
 /* ==========================================================================
    TALLY FORM DYNAMIC THEME
    ========================================================================== */
-[data-theme="peau"] .tally-embed iframe {
+[data-theme="verre"] .tally-embed iframe {
   filter: invert(1) hue-rotate(180deg);
 }
 
